@@ -1,6 +1,6 @@
 ## General Application Background
 
-The intention of this application if for users to coordinate white trails they will be using for a day hike. Assume that a user might go on more than one trail for a trip and that they might make multiple trips. You'll want to make sure that users can go on the same trail on multiple day hikes. You will not need to implement authentication/authorization functionality.
+The intention of this application if for users to coordinate what trails they will be using for a day hike. Assume that a user might go on more than one trail for a trip and that they might make multiple trips. You'll want to make sure that users can go on the same trail on multiple day hikes. You will not need to implement authentication/authorization functionality. You will be expected to present full test coverage for anything you build.
 
 ```
   As a visitor,
@@ -38,6 +38,12 @@ The intention of this application if for users to coordinate white trails they w
   As a visitor,
   when I visit a trip show,
   I see the shortest hiking distance
+```
+
+```
+  As a visitor,
+  when I visit a trip show,
+  I a list of names for each hike 
 ```
 
 ```
