@@ -1,24 +1,53 @@
-# README
+## General Application Background
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The intention of this application if for users to coordinate white trails they will be using for a day hike. Assume that a user might go on more than one trail for a trip and that they might make multiple trips. You'll want to make sure that users can go on the same trail on multiple day hikes. You will not need to implement authentication/authorization functionality.
 
-Things you may want to cover:
+```
+  As a visitor,
+  when I visit the trips index,
+  and I click a link to a trip show,
+  I see a list of trails included in the trip,
+  I see the name, address, and length for each trail.
+```
 
-* Ruby version
+```
+  As a visitor,
+  when I visit a trip show,
+  I see the planned total hiking distance
+```
 
-* System dependencies
+```
+  As a visitor,
+  when I visit a trip show,
+  I see the average hiking distance
+```
 
-* Configuration
+```
+  As a visitor,
+  when I visit a trip show,
+  I see the longest hiking distance
+```
 
-* Database creation
+```
+  As a visitor,
+  when I visit a trip show,
+  I see the shortest hiking distance
+```
 
-* Database initialization
+```
+  As a visitor,
+  when I visit a trip show,
+  I see the shortest hiking distance
+```
 
-* How to run the test suite
+```
+  As a visitor,
+  when I visit the trail show,
+  I see the name, address, and length of hike
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+  As a visitor,
+  when I visit the trail show,
+  I see the total number of trips this hike has been included in
+```
