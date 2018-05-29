@@ -1,11 +1,21 @@
 ## General Application Background
 
-The intention of this application if for users to coordinate what trails they will be using for a day hike. Assume that a user might go on more than one trail for a hike and that they might make multiple hikes. You'll want to make sure that users can go on the same trail on multiple day hikes. You will not need to implement authentication/authorization functionality. You will be expected to present full test coverage for everything you build.
+The intention of this application if for users to coordinate which trails they will be using for a day hike.
 
-* A "trip" described in the user stories will mean a single hiking trip.
-* Users will only take a hiking trip on a single day (no overnight camping on these hikes!)
-* A hiking trip will include one or more trails
-* A user could visit the same trail on different hiking trips
+### Constraints:
+
+- Users will go on many hiking trips
+- Users will visit one or more trails on a hiking trip
+- Users should be allowed to use the same trail on different hiking trips
+- Users will only take a hiking trip on a single day (no overnight camping!)
+
+
+### Do's and Don'ts:
+
+- You will not need to implement authentication/authorization functionality.
+- You will be expected to present full test coverage for everything you build.
+  - you are ONLY excused from writing validation/relationship tests at the model level
+
 
 ### Hiking Trip Index page
 ```
@@ -34,28 +44,28 @@ I see the name, address, and length for each trail.
 As a visitor,
 when I visit a hiking trip's page,
 I see the total hiking distance
-of all trails on that trip
+of all trails on that hiking trip
 ```
 
 ```
 As a visitor,
 when I visit a hiking trip's page,
 I see the average hiking distance
-of all trails on that trip
+of all trails on that hiking trip
 ```
 
 ```
 As a visitor,
 when I visit a hiking trip's page,
 I see the longest hiking distance
-from all trails on that trip
+from all trails on that hiking trip
 ```
 
 ```
 As a visitor,
 when I visit a hiking trip's page,
 I see the shortest hiking distance
-from all trails on that trip
+from all trails on that hiking trip
 ```
 
 ```
@@ -77,6 +87,6 @@ every hiking trip that includes this trail
 ```
 As a visitor,
 when I visit a trail's page,
-I see the total number of hiking trips this trail
-has been included in
+I see the total number of hiking trips where this trail
+was included
 ```
