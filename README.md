@@ -79,8 +79,9 @@ User Story 6 of 10
 
 As a visitor,
 when I visit a hiking trip's page,
-I see the longest hiking distance
-from all trails on that hiking trip
+I see a heading that says "Longest Trail on Trip"
+  and the name and length of the longest trail
+  included on that hiking trip
 ```
 
 ```
@@ -88,8 +89,9 @@ User Story 7 of 10
 
 As a visitor,
 when I visit a hiking trip's page,
-I see the shortest hiking distance
-from all trails on that hiking trip
+I see a heading that says "Shortest Trail on Trip"
+  and the name and length of the longest trail
+  included on that hiking trip
 ```
 
 ```
