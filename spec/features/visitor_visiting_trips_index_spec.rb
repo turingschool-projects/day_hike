@@ -61,4 +61,5 @@ describe 'visitor visiting trips index' do
     expect(page).to have_content("Longest Hiking Distance: #{trail4.length}")
   end
 
+
 end

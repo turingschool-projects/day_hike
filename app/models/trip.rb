@@ -14,4 +14,7 @@ class Trip < ApplicationRecord
     trails.maximum(:length)
   end
 
+  def trail_with_longest_hiking_distance
+    trails.order('length DESC').limit(1)
+  end
 end
