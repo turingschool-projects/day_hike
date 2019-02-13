@@ -10,6 +10,7 @@ class TripsController < ApplicationController
     @total_hiking_distance = @trip.total_hiking_distance
     @average_hiking_distance = @trip.average_hiking_distance
     @longest_hiking_distance = @trip.longest_hiking_distance
+    @shortest_hiking_distance = @trip.shortest_hiking_distance
   end
 
 
