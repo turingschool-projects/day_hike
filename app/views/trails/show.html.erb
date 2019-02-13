@@ -1,0 +1,8 @@
+<p> This is <%=@trail.name%> trail </p>
+<p> located at: <%=@trail.address%></p>
+
+<p> This trail is included in following trips</p>
+<%=@trips.each do |t| %>
+  <p>Total hiking distance for <%=t.name%>: <%=t.total_hiking_distance%></p>
+<%end%>
+<p>Total Number of Trips where this trail is included: <%=@total_trips%><p>

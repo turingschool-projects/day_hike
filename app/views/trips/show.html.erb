@@ -1,0 +1,13 @@
+<p> This is <%=@trip.name %> trip</p>
+<p> This trip has these trails </p>
+<%@trails.each do |t| %>
+<li>
+  <%=link_to t.name, trail_path(t)%>
+  <%=t.address%>
+  <%=t.length%>
+</li>
+<%end%>
+<p> Total Hiking Distance: <%=@total_hiking_distance%></p>
+<p> Average Hiking Distance: <%=@average_hiking_distance%></p>
+<p> Longest Hiking Distance: <%=@longest_hiking_distance%></p>
+<p>Shortest Hiking Distance: <%=@shortest_hiking_distance%></p>
