@@ -1,4 +1,6 @@
 class Trip < ApplicationRecord
+  validates_presence_of :name
+
   has_many :triptrails
   has_many :trails, through: :triptrails
 
@@ -18,7 +20,4 @@ class Trip < ApplicationRecord
     trails.minimum(:length)
   end
 
-  # def trail_with_longest_hiking_distance
-  #   trails.order('length DESC').limit(1)
-  # end
 end
