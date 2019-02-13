@@ -47,4 +47,18 @@ describe 'visitor visiting trips index' do
 
     expect(page).to have_content("Total Hiking Distance: #{trail1.length + trail2.length}")
   end
+
+  it "shows longest hiking distance of all trails in that trip" do
+    trip = Trip.create(name: 'trip1', start_date: '02/03/13', end_date: '02/03/13')
+
+    trail1 = trip.trails.create(name: 'first trail', address: 'denver', length: 5)
+    trail2 = trip.trails.create(name: 'second trail', address: 'lakewood', length: 15)
+    trail3 = trip.trails.create(name: 'second trail', address: 'lakewood', length: 25)
+    trail4 = trip.trails.create(name: 'second trail', address: 'lakewood', length: 35)
+
+    visit trip_path(trip)
+
+    expect(page).to have_content("Longest Hiking Distance: #{trail4.length}")
+  end
+
 end
