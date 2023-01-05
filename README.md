@@ -12,7 +12,7 @@ The intention of this application if for users to coordinate which trails they w
 
 ## Setup
 
-- `rails db:{drop,create,migrate,seed}
+- `rails db:{drop,create,migrate,seed}`
 - `bundle exec rspec spec/models` (You should have 5 passing tests)
 
 ## Requirements
