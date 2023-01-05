@@ -12,17 +12,18 @@ The intention of this application if for users to coordinate which trails they w
 
 ## Setup
 
-- Perform the usual setup steps after cloning a Rails application
+- `rails db:{drop,create,migrate,seed}
+- `bundle exec rspec spec/models` (You should have 5 passing tests)
 
 ## Requirements
 
-- TDD all new work; you may postpone model tests for attribute validations only
+- TDD all new work; validation tests are encouraged but not required. 
+- Model coverage should be at 100% (outside of validations)
 
 ## Not Required
 
 - No form input is required
-- No visual styling is required
-
+- No visual styling is expected or required
 
 ## User Stories
 
