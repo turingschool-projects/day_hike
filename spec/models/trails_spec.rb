@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Trail, type: :model do
+RSpec.describe Trail, type: :model do
   describe 'validations' do
     it { should validate_presence_of :length }
     it { should validate_presence_of :name }
